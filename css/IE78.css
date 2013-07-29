@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tg-prevnext { background-color:transparent; }
+
+.tg-prevbox { 
+background-image:url(../../../RATimeline/img/pngs/IE78_bgr_prev.png);
+background-position:left top;
+background-repeat:no-repeat; }
+
+.tg-nextbox { 
+background-image:url(../../../RATimeline/img/pngs/IE78_bgr_next.png);
+background-position:right top;
+background-repeat:no-repeat; }
+
+.tg-date-display {
+	background-color:#F0B517;
+	background-image:url(../../../RATimeline/img/jpgs/IE78_bgr_date.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* CSS for Ipad landscape mode */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+
+/* CSS to reduce popup windows */
+  .modal {
+		top:4%;
+}
+.filter-header h2 {
+	line-height:12px;
+}
+}
+
+/* CSS for Ipad portrait mode */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  
+	
+}

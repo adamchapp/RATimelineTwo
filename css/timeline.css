@@ -1,0 +1,229 @@
+html, body {
+    background-color: #fff;
+	font-family: ubuntu;
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:none;
+}
+
+#graph {
+	text-align:center;
+}
+
+#top_bar {
+	width:92.65%; 
+	height:45px;
+	margin:auto; 
+	padding:7px;
+	padding-bottom:10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #7f8180;
+	border-radius:3px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	border-bottom:none;
+	background-image:url(../img/jpgs/top_bar_bkgr.jpg); 
+	background-repeat:repeat-x; 
+}
+
+.RA_icon {
+	float:left; 
+	margin-left:20px
+}
+
+.filter_icon {
+	float:right; 
+	padding:10px;
+	margin-right:20px; 
+}
+
+.reset_icon {
+	float:right; 
+	margin-right:20px;
+	padding:10px; 	
+}
+
+svg {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #7f8180;
+	border-radius:3px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-top:none;
+}
+
+text {color:#FFF}
+
+/* inner container - uncomment the other line to use a gradient fill instead */
+.background {
+/*    fill: url(#background-tile) #cccccc;*/
+    fill: url(#gradient) #fff;
+}
+
+.axisbackground {
+    fill: url(#gradient) #336699;
+}
+
+/* background gradients -  to use an image instead set the stop-opacity to  */
+.gradienttop {
+    stop-color: #FFF;
+    stop-opacity: 1;
+}
+
+.gradientbottom {
+    stop-color:#CCC;
+    stop-opacity: 1;
+}
+
+/* AXES */
+
+.axis {
+    font-size: 12px;
+    fill: #ffffff;
+    height: 30px;
+}
+
+.month path,
+.month line {
+    fill: none;
+    stroke:white;
+    shape-rendering: crispEdges;
+}
+
+.year path,
+.year line {
+    fill: none;
+    stroke: #000000;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.year {
+    font-size: 16px;
+}
+
+/* GRID LINES */
+
+.grid .tick {
+    stroke: #7f8180;
+    shape-rendering: crispEdges;
+    opacity: 1;
+	stroke-dasharray:2;	
+}
+.grid path {
+    stroke-width: 0;
+    opacity: 0;
+}
+
+/* EVENTS */
+
+.short-event {
+    /*fill: #c9cdd6;*/
+}
+
+.event {
+    fill:#eee;
+}
+
+.active {
+    fill:#6699cc;
+}
+
+.icon {
+    fill :#FFF;
+}
+
+.label {
+    font-size: 16px;
+    color: #6699cc;
+    dominant-baseline: auto;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 180px;
+    height: 70px;
+    padding: 2px;
+    font: 12px;
+    color: #ffffff;
+    background: grey;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    vertical-align: middle;
+}
+
+.login-form {
+	text-align:center;
+}
+
+.details-box {
+	background-image:url(../img/jpgs/bkgr_buttonsA.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	text-align:left;
+	padding:20px;
+	padding-top:0px;
+}
+
+.details-box button {
+	float:right;
+	margin-button:20px;
+}
+
+.details-title {
+	color:#FFF;
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:20px;
+	padding-top:5px;
+}
+
+.details-descrip {
+	font-size:14px;
+}
+
+/*Even though the style is called yellow, now the color is blue */
+.yellow {
+	color:#336699;
+}
+
+.login-form input {
+	height:30px;
+	background-color:#FFF;
+	background-image:url(../img/pngs/gradient_grey.png);
+	background-repeat:repeat-x;
+	border:1px solid #7e807f;
+	border-radius:3px;
+	padding:5px 10px;
+	color:#7e807f;
+	margin-bottom:20px;
+}
+
+.login-form input:hover {
+	box-shadow:0px 0px 5px #336699;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  z-index: 1050;
+  width: 400px;
+  margin:auto;
+  background-image:url(../img/gifs/login_bkgr.gif);
+  background-repeat:repeat;
+}
+
+.filter-boxes {
+	padding-left:20px;
+}
+
+.filter-boxes select {
+	width:350px;
+}

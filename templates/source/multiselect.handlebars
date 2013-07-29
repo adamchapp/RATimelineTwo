@@ -1,0 +1,28 @@
+<div class="login-form">
+
+    <div class="login-header">
+        <p>{{title}}</p>
+    </div>
+
+    <div style="padding-left: 20px">
+        <p>
+            <select id="multi" data-placeholder="{{placeholder}}" class="chzn-select" multiple style="width:350px;" tabindex="2">
+                {{#each data}}
+                <option value="{{this.value}}">{{this.label}}</option>
+                {{/each}}
+            </select>
+        </p>
+    </div>
+
+    <div class="experts_btns">
+
+        <input id='submitButton' type='button' class='yellow-button' value='OK' />
+
+        <input id='cancelButton' type='button' class='yellow-button' value='Cancel' />
+
+        <input id='resetButton' type='button' class='yellow-button' value='Reset' />
+
+    </div>
+
+</div>
+

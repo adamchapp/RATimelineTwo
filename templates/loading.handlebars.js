@@ -1,0 +1,1 @@
+(function(){var a=Handlebars.template,b=Handlebars.templates=Handlebars.templates||{};b.loading=a(function(a,b,c,d,e){return this.compilerInfo=[2,">= 1.0.0-rc.3"],c=c||a.helpers,e=e||{},'<div class="login-form">\r\n  <div class="loading-popup">\r\n   <h1>Loading...</h1>\r\n   <p>Please wait whilst we load your timeline data</p>\r\n  </div>\r\n</div>'})})()

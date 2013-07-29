@@ -1,0 +1,114 @@
+<div class="login-form">
+
+    <div class="filter-header">
+        <p>Opportunities</p>
+    </div>
+
+    <div style="padding-left: 20px">
+        <p>
+            <select id="opportunityCombo" data-placeholder="Choose opportunities" class="chzn-select" multiple style="width:350px;">
+                {{#each ActivityOpportunities}}
+                    <option value="{{this.Id}}">{{this.Name}}</option>
+                {{/each}}
+            </select>
+        </p>
+
+        <p>
+            <select id="strategiesMulti" data-placeholder="Choose strategies" class="chzn-select" multiple style="width:350px;" tabindex="2">
+            </select>
+        </p>
+    </div>
+
+    <div class="filter-header">
+        <p>Scientific Evidence</p>
+    </div>
+
+    <div style="padding-left: 20px">
+
+        <p>
+            <select id="scientificEvidenceMulti" data-placeholder="Choose scientific evidence" class="chzn-select" multiple style="width:350px;" tabindex="2">
+                {{#each Teams}}
+                    <option value="{{this.Id}}">{{this.Name}}</option>
+                {{/each}}
+            </select>
+        </p>
+
+    </div>
+
+    <div class="filter-header">
+        <p>Scientific Engagement Activity</p>
+    </div>
+
+    <div style="padding-left: 20px">
+
+        <p>
+            <select id="activityMulti" data-placeholder="Choose one or more activities" class="chzn-select" multiple style="width:350px;" tabindex="2">
+                {{#each ActivityTypes}}
+                    <option value="{{this.Id}}">{{this.Name}}</option>
+                {{/each}}
+            </select>
+        </p>
+
+    </div>
+
+    <div class="filter-header">
+        <p>External Experts</p>
+    </div>
+
+    <div style="padding-left: 20px">
+
+        <p>
+            <select id="externalExpertsMulti" data-placeholder="Choose one or more external experts" class="chzn-select" multiple style="width:350px;" tabindex="2">
+                {{#each RelatedExperts}}
+                    <option value="{{this.Id}}">{{this.FirstName}} {{this.LastName}}</option>
+                {{/each}}
+            </select>
+        </p>
+
+    </div>
+
+    <div class="filter-header">
+        <p>GSK Responsible</p>
+    </div>
+
+    <div style="padding-left: 20px">
+
+        <p>
+            <select id="gskResponsibleMulti" data-placeholder="Choose GSK team members" class="chzn-select" multiple style="width:350px;" tabindex="2">
+                {{#each Employees}}
+                    <option value="{{this.Id}}">{{this.FirstName}} {{this.LastName}}</option>
+                {{/each}}
+            </select>
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="filter-header">
+        <p>Location</p>
+    </div>
+
+    <div style="padding-left: 20px">
+
+        <p>
+            <select id="locationMulti" data-placeholder="Choose one or more locations" class="chzn-select" multiple style="width:350px;" tabindex="2">
+                {{#each Locations}}
+                    <option value="{{this.Id}}">{{this.Name}}</option>
+                {{/each}}
+            </select>
+        </p>
+
+    </div>
+
+    <div class="experts_btns">
+
+        <input id='submitButton' type='button' class='yellow-button' value='OK' />
+
+        <input id='cancelButton' type='button' class='yellow-button' value='Cancel' />
+
+        <input id='resetButton' type='button' class='yellow-button' value='Reset' />
+
+    </div>
+
+</div>
